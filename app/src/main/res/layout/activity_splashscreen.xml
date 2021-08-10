@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SplashScreen">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="centerCrop"
+        android:src="@drawable/octo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/gifImageView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/titillium_reg"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:text="Greetings, Hooman! "
+        android:textColor="@color/blackish_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gifImageView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/titillium_reg"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:text="Please wait ... \nYou'll be directed to the main page shortly ... "
+        android:textAlignment="center"
+        android:textColor="@color/blackish_light"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_shady"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tv_img"
+        android:layout_width="144dp"
+        android:layout_height="141dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/user1"
+        app:civ_border_color="@color/blackish_light"
+        app:civ_border_width="3dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:fontFamily="@font/titillium_bold"
+        android:gravity="center_vertical"
+        android:text="Display Name"
+        android:textColor="@color/blackish"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="232dp"
+        android:fontFamily="@font/titillium_reg"
+        android:gravity="center_vertical"
+        android:text="@string/username"
+        android:textColor="@color/blackish"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="280dp"
+        android:fontFamily="@font/titillium_reg"
+        android:gravity="center_vertical"
+        android:text="Company"
+        android:textColor="@color/blackish"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="308dp"
+        android:fontFamily="@font/titillium_reg"
+        android:gravity="center_vertical"
+        android:text="Location"
+        android:textColor="@color/blackish_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_repo_number"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="370dp"
+        android:fontFamily="@font/titillium_bold"
+        android:text="XXX"
+        android:textAlignment="center"
+        android:textColor="@color/blackish_light"
+        android:textSize="22sp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/tv_repo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_repo_number"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/titillium_reg"
+        android:text="Repository"
+        android:textAlignment="center"
+        android:textColor="@color/blackish_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_followers_number"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="137dp"
+        android:fontFamily="@font/titillium_bold"
+        android:gravity="center"
+        android:text="XXX"
+        android:textAlignment="center"
+        android:textColor="@color/blackish_light"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_followers"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_followers_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/titillium_reg"
+        android:text="Followers"
+        android:textAlignment="center"
+        android:textColor="@color/blackish_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_following_number"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/titillium_bold"
+        android:gravity="center"
+        android:text="XXX"
+        android:textAlignment="center"
+        android:textColor="@color/blackish_light"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_following"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_following_number"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/titillium_reg"
+        android:text="Following"
+        android:textAlignment="center"
+        android:textColor="@color/blackish_light"
+        android:textSize="16sp" />
+</RelativeLayout>
